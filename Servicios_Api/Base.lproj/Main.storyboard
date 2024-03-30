@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mz9-CP-ywd">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Episodios View Controller-->
+        <scene sceneID="eaB-H6-j4e">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="5he-hu-BkH" customClass="EpisodiosViewController" customModule="Servicios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iaU-xb-Siv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EPISODIOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3h-EQ-wpg">
+                                <rect key="frame" x="131.66666666666666" y="69" width="129.99999999999997" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="MJV-m8-FyC"/>
+                                    <constraint firstAttribute="width" constant="130" id="vVM-lT-a18"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gOi-f8-FpC">
+                                <rect key="frame" x="0.0" y="116" width="393" height="702"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="B0J-2A-tAV"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="WtL-51-WUD"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cRv-mC-J3c"/>
+                        <color key="backgroundColor" red="0.49815498590000001" green="0.61483182510000001" blue="0.86078917980000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="j3h-EQ-wpg" firstAttribute="top" secondItem="cRv-mC-J3c" secondAttribute="top" constant="10" id="PYE-ed-aCA"/>
+                            <constraint firstItem="j3h-EQ-wpg" firstAttribute="centerX" secondItem="iaU-xb-Siv" secondAttribute="centerX" id="YkT-WE-TeQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrEpisodios" destination="gOi-f8-FpC" id="cvR-qT-B20"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqq-4L-mg2" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="823.66412213740455" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eO8-sd-CZN">
+            <objects>
+                <viewController id="mz9-CP-ywd" customClass="ViewController" customModule="Servicios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TfP-qp-qBH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONAJES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7B-gl-5XN">
+                                <rect key="frame" x="119" y="69" width="155" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="SfC-i8-XC8"/>
+                                    <constraint firstAttribute="height" constant="29" id="T4w-vf-PEF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4b1-R5-pLJ">
+                                <rect key="frame" x="0.0" y="116" width="393" height="702"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="BZs-oK-fhc"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="8Kl-ng-vIy"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="heJ-7E-lOI"/>
+                        <color key="backgroundColor" red="0.49815498590000001" green="0.61483182510000001" blue="0.86078917980000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="x7B-gl-5XN" firstAttribute="top" secondItem="heJ-7E-lOI" secondAttribute="top" constant="10" id="3zC-rD-aet"/>
+                            <constraint firstItem="x7B-gl-5XN" firstAttribute="centerX" secondItem="TfP-qp-qBH" secondAttribute="centerX" id="7EJ-gc-i1W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrPersonajes" destination="4b1-R5-pLJ" id="tYJ-r2-IZL"/>
+                        <segue destination="5he-hu-BkH" kind="presentation" identifier="sgEpisodios" modalPresentationStyle="pageSheet" id="Bpz-P6-WOn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ao2-s8-ExC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="4"/>
         </scene>
     </scenes>
 </document>

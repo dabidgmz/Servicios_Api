@@ -13,6 +13,8 @@
 		0F1ED39C2BB39C6200AC0240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1ED39A2BB39C6200AC0240 /* Main.storyboard */; };
 		0F1ED39E2BB39C6500AC0240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F1ED39D2BB39C6500AC0240 /* Assets.xcassets */; };
 		0F1ED3A12BB39C6500AC0240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F1ED39F2BB39C6500AC0240 /* LaunchScreen.storyboard */; };
+		0F1ED3A92BB39D6400AC0240 /* EpisodiosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1ED3A82BB39D6400AC0240 /* EpisodiosViewController.swift */; };
+		0F1ED3AB2BB39D8700AC0240 /* Personaje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1ED3AA2BB39D8700AC0240 /* Personaje.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0F1ED39D2BB39C6500AC0240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F1ED3A02BB39C6500AC0240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F1ED3A22BB39C6500AC0240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F1ED3A82BB39D6400AC0240 /* EpisodiosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodiosViewController.swift; sourceTree = "<group>"; };
+		0F1ED3AA2BB39D8700AC0240 /* Personaje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personaje.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				0F1ED3942BB39C6200AC0240 /* AppDelegate.swift */,
 				0F1ED3962BB39C6200AC0240 /* SceneDelegate.swift */,
 				0F1ED3982BB39C6200AC0240 /* ViewController.swift */,
+				0F1ED3A82BB39D6400AC0240 /* EpisodiosViewController.swift */,
+				0F1ED3AA2BB39D8700AC0240 /* Personaje.swift */,
 				0F1ED39A2BB39C6200AC0240 /* Main.storyboard */,
 				0F1ED39D2BB39C6500AC0240 /* Assets.xcassets */,
 				0F1ED39F2BB39C6500AC0240 /* LaunchScreen.storyboard */,
@@ -140,7 +146,9 @@
 			files = (
 				0F1ED3992BB39C6200AC0240 /* ViewController.swift in Sources */,
 				0F1ED3952BB39C6200AC0240 /* AppDelegate.swift in Sources */,
+				0F1ED3A92BB39D6400AC0240 /* EpisodiosViewController.swift in Sources */,
 				0F1ED3972BB39C6200AC0240 /* SceneDelegate.swift in Sources */,
+				0F1ED3AB2BB39D8700AC0240 /* Personaje.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
